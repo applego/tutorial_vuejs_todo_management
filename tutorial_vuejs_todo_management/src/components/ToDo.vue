@@ -4,7 +4,7 @@
     <h2>Todo Management.</h2>
     <hr/>
     <form>
-        <button>ADD TODO</button>
+        <button v-on:click="addTodo()">ADD TODO</button>
         <button>DELETE FINISHED TODOS</button>
         <p>input: <input type="text" v-model="newTodo"></p>
         <p>todo:{{ newTodo }}</p>
@@ -31,26 +31,27 @@ export default {
     return {
       msg: 'Welcome to Your ToDo App',
       todos:[
-          {
-              text:'vue-router',
-              done:false
-          },
-          {
-              text:'vuex',
-              done:false
-          },
-          {
-              text:'vue-loader',
-              done:false
-          },
-          {
-              text:'awesome-vue',
-              done:true
-          },
+          {text:'vue-router',done:false},
+          {text:'vuex',done:false},
+          {text:'vue-loader',done:false},
+          {text:'awesome-vue',done:true},
       ],
       newTodo:""
     }
-  }
+  },
+  methods:{
+      addTodo:function(event){
+          let text = this.newTodo && this.newTodo.trim()
+          if(!text){
+              return
+          }
+          this.todos.push({
+              text:text,
+              done:false
+          })
+          this.newTodo = ''
+        },
+    }
 }
 </script>
 
