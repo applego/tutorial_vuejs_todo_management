@@ -4,18 +4,18 @@
     <h2>Todo Management.</h2>
     <hr/>
     <form>
-        <button>ADD TASK</button>
-        <button>DELETE FINISHED TASKS</button>
+        <button>ADD TODO</button>
+        <button>DELETE FINISHED TODOS</button>
         <p>input: <input type="text" v-model="newTodo"></p>
-        <p>task:{{ newTodo }}</p>
+        <p>todo:{{ newTodo }}</p>
     </form>
-    <div class="task-list">
-      <label class="task-list__item"><input type="checkbox"><button>EDIT</button>vue-router</label>
-      <label class="task-list__item"><input type="checkbox"><button>EDIT</button>vuex</label>
-      <label class="task-list__item"><input type="checkbox"><button>EDIT</button>vue-loader</label>
-      <label class="task-list__item--checked"><input type="checkbox" checked><button>EDIT</button>awesome-vue</label>
+    <div class="todo-list">
+      <label class="todo-list__item"><input type="checkbox"><button>EDIT</button>vue-router</label>
+      <label class="todo-list__item"><input type="checkbox"><button>EDIT</button>vuex</label>
+      <label class="todo-list__item"><input type="checkbox"><button>EDIT</button>vue-loader</label>
+      <label class="todo-list__item--checked"><input type="checkbox" checked><button>EDIT</button>awesome-vue</label>
 
-      <label class="task-list__item"
+      <label class="todo-list__item"
              v-for="todo in todos"
              v-bind:key="todo.id">
           <input type="checkbox"><button>EDIT</button>{{todo.text}}
@@ -73,7 +73,7 @@ a {
   display: -ms-flex;
   display: -o-flex;
 }
-.task-list {
+.todo-list {
   @include flex-vender;
   flex-direction: column;
   align-items: center;
