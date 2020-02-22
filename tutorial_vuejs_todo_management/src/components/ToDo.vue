@@ -14,6 +14,12 @@
       <label class="task-list__item"><input type="checkbox"><button>EDIT</button>vuex</label>
       <label class="task-list__item"><input type="checkbox"><button>EDIT</button>vue-loader</label>
       <label class="task-list__item--checked"><input type="checkbox" checked><button>EDIT</button>awesome-vue</label>
+
+      <label class="task-list__item"
+             v-for="todo in todos"
+             v-bind:key="todo.id">
+          <input type="checkbox"><button>EDIT</button>{{todo.text}}
+      </label>
     </div>
   </div>
 </template>
@@ -23,7 +29,25 @@ export default {
   name: 'ToDo',
   data () {
     return {
-      msg: 'Welcome to Your ToDo App'
+      msg: 'Welcome to Your ToDo App',
+      todos:[
+          {
+              text:'vue-router',
+              done:false
+          },
+          {
+              text:'vuex',
+              done:false
+          },
+          {
+              text:'vue-loader',
+              done:false
+          },
+          {
+              text:'awesome-vue',
+              done:true
+          },
+      ]
     }
   }
 }

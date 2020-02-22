@@ -79,3 +79,12 @@ Vue.component('my-component',{
 
 画面に出力されているWelcome to Your Vue.js App はVueインスタンスの中に定義されたmsgを出力していることがわかります。
 
+## 参考
+- https://qiita.com/sin_tanaka/items/29769266b3b078ea0f7c
+
+- https://qiita.com/yuno_miyako/items/23a0cae66b2f87adaf2f
+
+- https://qiita.com/sin_tanaka/items/6d5d9089eb76dda4ce88
+    - Module build failed: TypeError: this.getResolve is not a function
+    https://qiita.com/gosairei1207/items/95454ec5a396bd5f05fd
+    
