@@ -80,6 +80,23 @@
         </a>
       </li>
     </ul>
+    <h2>Added by Me</h2>
+    <ul>
+      <li>
+        <a
+          href="#/colorselect"
+        >
+          color select
+        </a>
+      </li>
+      <li>
+        <a
+          href="#/todo"
+        >
+          to do
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
 
