@@ -87,4 +87,6 @@ Vue.component('my-component',{
 - https://qiita.com/sin_tanaka/items/6d5d9089eb76dda4ce88
     - Module build failed: TypeError: this.getResolve is not a function
     https://qiita.com/gosairei1207/items/95454ec5a396bd5f05fd
-    
+
+- https://qiita.com/Haruka-Ogawa/items/997401a2edcd20e61037
+
